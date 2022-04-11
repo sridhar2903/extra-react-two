@@ -6,27 +6,27 @@ const[name,setName]=useState('');
 const[age,setAge]=useState('');
 const[salary,setSalary]=useState('');
 const[show,setShow]=useState(false)
-const[store,setStore]=useState([
-    {
-        Name:name,
-        Age:age,
-        Salary:salary
-    }
-])
+// const[store,setStore]=useState([
+//     {
+//         Name:name,
+//         Age:age,
+//         Salary:salary
+//     }
+// ])
 const showdata=()=>{
 
-    // setShow(!show)
+    setShow(!show)
 
-    setStore(
-        [
-            ...store,
-            {
-                Name:name,
-                Age:age,
-                Salary:salary
-            }
-        ]
-    )
+//     setStore(
+//         [
+//             ...store,
+//             {
+//                 Name:name,
+//                 Age:age,
+//                 Salary:salary
+//             }
+//         ]
+//     )
 
 }
 
@@ -46,15 +46,15 @@ const showdata=()=>{
 <button type='submit' onClick={showdata}>Submit</button>
 <br/>
 
-{
+{/* {
     store.map((store)=><div>{store.Name}
     <br/>
     {store.Age}
     <br/>{store.Salary}
     </div>)
-}
-{/* 
-{show&&<Display dataname={name} dataage={age} datasalary={salary} />} */}
+} */}
+
+{show&&<Display dataname={name} dataage={age} datasalary={salary} />} 
 
 
         </>
