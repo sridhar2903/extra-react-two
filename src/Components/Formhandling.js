@@ -47,7 +47,11 @@ const showdata=()=>{
 <br/>
 
 {
-    store.map((store)=><div>{store.Name}{store.Age}{store.Salary}</div>)
+    store.map((store)=><div>{store.Name}
+    <br/>
+    {store.Age}
+    <br/>{store.Salary}
+    </div>)
 }
 {/* 
 {show&&<Display dataname={name} dataage={age} datasalary={salary} />} */}
